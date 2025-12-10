@@ -1,0 +1,182 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 페이지 전체 센터 정렬 */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* 카드 영역 */
+.login-card {
+  width: 380px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 32px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+/* 제목 */
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 설명 */
+.login-sub {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* 로그인 버튼 */
+.login-button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #0072ce; /* Okta Blue */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+/* hover 효과 */
+.login-button:hover {
+  background-color: #005aa3;
+}
+
+.dash-container {
+  padding: 40px;
+  min-height: 100vh;
+  background: #f3f5f7;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+/* 헤더 영역 */
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.dash-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.dash-logout {
+  background: #ef4444;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.25s ease;
+}
+
+.dash-logout:hover {
+  background: #dc2626;
+}
+
+/* 컨텐츠 카드 영역 */
+.dash-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.dash-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+
+.dash-card:hover {
+  transform: translateY(-3px);
+}
+
+.dash-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.dash-card p {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* 카드 버튼 */
+.dash-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.dash-btn:hover {
+  background: #1d4ed8;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f6f8fa;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+/* 스피너 */
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #d1d5db;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #374151;
+}
